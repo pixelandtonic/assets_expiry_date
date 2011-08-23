@@ -1,0 +1,21 @@
+h1. Assets Expiry Date
+
+This EE2 extension demonstrates how to use "Assets’s":http://pixelandtonic.com new @assets_meta_add_row@ hook. It adds an “Expiry Date” metadata field to file HUDs.
+
+h3. Requirements
+
+* "ExpressionEngine":http://expressionengine.com/index.php?affiliate=brandonkelly 2.1.3 or later
+* "Assets":http://pixelandtonic.com/assets 1.1 or later
+
+h3. Installation
+
+* Upload the assets_expiry_date folder to system/expressionengine/third_party/
+* Enable Assets Expiry Date in Add-Ons → Extensions
+
+h3. Usage
+
+Upon installation, each of your files’ HUDs will get a new “Expiry Date” field.
+
+You can access a file’s expiry date from Assets’ primary tag pair via the @{expiry_date}@ variable tag.
+
+You can also filter your Assets fields to only show files which haven’t expired by adding @expiry_date="<{current_time}"@ to your opening Assets field tag.
