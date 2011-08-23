@@ -18,4 +18,4 @@ Upon installation, each of your files’ HUDs will get a new “Expiry Date” f
 
 You can access a file’s expiry date from Assets’ primary tag pair via the @{expiry_date}@ variable tag, which accepts the same "@format=@ parameter":http://expressionengine.com/user_guide/templates/date_variable_formatting.html as any other date variable tag in EE.
 
-You can also filter your Assets fields to only show files which haven’t expired by adding @expiry_date="<{current_time}"@ to your opening Assets field tag.
+You can also filter your Assets fields to only show files which haven’t expired by adding @expiry_date=">{current_time}"@ to your opening Assets field tag.
